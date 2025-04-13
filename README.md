@@ -1,4 +1,4 @@
-# MQTT Simulator Connector in Ubuntu
+# MQTT Simulink Connector in Ubuntu
 
 &emsp;&emsp;This repo shows an example of a Simulink subscribing MQTT.   
 
@@ -7,7 +7,7 @@
 
 &emsp;&emsp;It is adviced to follow our prior repository ([OPC UA Subscriber in MATLAB](https://github.com/HansOersted/diameter_subscriber)) subscribing communicating with MQTT in *m* file.  
   
-&emsp;&emsp;Importantly, up to today (January 21, 2025), the OPC Unified Architecture blocks in Simulator have ***not*** been designed for Linux; it is for the Windows user only. One cannot use an exist block in Simulink to subscribe the OPC UA signal directly. The attempt in utilizing the relevant block in simulink will result in an Error Dialog below in Linux.
+&emsp;&emsp;Importantly, up to today (January 21, 2025), the OPC Unified Architecture blocks in Simulink have ***not*** been designed for Linux; it is for the Windows user only. One cannot use an exist block in Simulink to subscribe the OPC UA signal directly. The attempt in utilizing the relevant block in simulink will result in an Error Dialog below in Linux.
 
 <br>
 
@@ -58,9 +58,9 @@ end
 
 <br>
 
-## Section 4. Feed the simulator with the global reference.  
+## Section 4. Feed the Simulink with the global reference.  
 
-&emsp;&emsp;In our designation, Simulink is being updated with the latest value of `reference` in real-time. Therefore, theSimulator has the latest information about the data from MQTT.
+&emsp;&emsp;In our designation, Simulink is being updated with the latest value of `reference` in real-time. Therefore, the Simulink has the latest information about the data from MQTT.
 
 &emsp;&emsp;A `matlab function` block in Simulink is encapsulated with the following code to realize this function.
 
